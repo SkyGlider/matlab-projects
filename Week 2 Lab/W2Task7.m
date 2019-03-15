@@ -2,6 +2,7 @@
 % Date: 15 MAR 2019
 % Task 7 : Matrices
 clear all; close all; clc;
+
 % Create matrices A and B by inputting values
 A = [ 8 7 9 5 7 ; 9 6 0 5 5 ; 3 6 0 2 3 ; 4 6 0 8 9 ; 2 1 2 1 2] ;
 B = [ 38; -10; 44; -7; 53 ] ;

@@ -16,9 +16,9 @@ clear all; close all; clc;
     %Constructing matrix Y row-by-row
  
     %pick out values in 3rd, 6th and 9th position in X and form row vector 
-    row_1 =  X([3 6 9]);
+    row_1 =  X(3:3:10);
     %use sqrt function on row vector 1  to find sqrt of each element
-    row_2 = sqrt(X([3 6 9]));
+    row_2 = sqrt(row_1);
     %use abs function to get abosolute difference
     row_3 = abs(row_1 - row_2);
     %multiply each element by 5 (.* not required as 5 is constant)

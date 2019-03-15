@@ -8,7 +8,7 @@ clear all; close all; clc;
 x = [ -5 pi exp(1) 999 ]; 
 
 %use element-by-element operation to find fx for each x value
-fx = ( x .* sin(x) ) ./ (x .^ 3 - 2)
+fx = ( x .* sin(x) ) ./ (x .^ 3 - 2);
 
 %assign the answer for f(-5) and f(999) to respective vars 
 %using their positions
