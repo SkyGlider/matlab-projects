@@ -2,6 +2,7 @@
 % Date: 15 MAR 2019
 % Task 6 : f(x)
 clear all; close all; clc;
+
 %Input values 
 %define x as a matrix containing 4 given values
 x = [ -5 pi exp(1) 999 ]; 
