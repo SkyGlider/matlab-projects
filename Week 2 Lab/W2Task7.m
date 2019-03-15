@@ -32,7 +32,7 @@ ans_6 = A(2:4,1:4)
 
 % Difference
 % Since matrices ans_5 and ans_6 are of same dimensions, it can be done
-ans_7 = ans_5 - ans_6
+ans_7 = abs(ans_5 - ans_6)
 
 % Element square
 % (.^) is required as it is an element by element operation

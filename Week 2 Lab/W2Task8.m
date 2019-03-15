@@ -8,7 +8,7 @@ clear all; close all; clc;
     %Create Vector X containing 1 to 10
     X = 1:10 ;
     %Then carry out element square of vector X and reassign it to X
-    X = X.^2
+    X = X.^2 ;
     
  
 %Create matrix Y
