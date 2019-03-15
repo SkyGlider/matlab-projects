@@ -25,7 +25,7 @@
 
 %Corrected code
 
-clear all ; close  all ; clc
+clear all ; close  all ; clc;
 
 %Input values (pre-defined)
 

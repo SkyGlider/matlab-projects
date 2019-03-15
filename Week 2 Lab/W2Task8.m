@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 15 MAR 2019
 % Task 8 : Vectors and Matrices
+clear all; close all; clc;
 
 %Create row vector X 
 

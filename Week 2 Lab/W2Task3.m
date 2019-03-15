@@ -2,6 +2,8 @@
 % Date: 15 MAR 2019
 % Task 3: Resistance
 
+clear all; close all; clc;
+
 %Variables
 %Input value for each resistor
 r1 = 400;
