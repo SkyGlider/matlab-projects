@@ -17,5 +17,6 @@ rseries = r1 + r2 + r3 + r4
 
 %Connected in parallel
 rp_1 = (1/r1) + (1/r2) + (1/r3) + (1/r4);
+
 %Calculating the reciprocal of rp_1
 rparallel = 1/rp_1

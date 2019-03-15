@@ -17,7 +17,8 @@
 %                                the operation
 %                              - Q should be 9.81e-6 or 9.81*10^-6
 
-% R = 50                       - R should 5e-3 since it is calculated in cm
+% R = 50                       - R should 5e-3/2 since it is calculated in cm
+%                              - 5e-3 should be divided by 2 to get radius
 %                              - 1 um = 0.0001 cm
 
 % mu = 0.03                    - correct value but should be defined first
@@ -30,7 +31,7 @@ clear all ; close  all ; clc;
 %Input values (pre-defined)
 
 Q = 9.81e-6;
-R = 5e-3;
+R = (5e-3)/2;
 mu = 0.03;
 
 %Calculation and output
