@@ -1,7 +1,15 @@
 % Name: Andrew Pang
 % Date: 29 MAR 2019
 % Function for Task 5 : Fence
-
+%
+% -Inputs-
+% width = Fence width
+% area = Fence area
+%
+% -Outputs-
+% leng = Fence length
+% peri = Fence perimeter
+%
 %creates a functions that returns 2 values, length and perimeter
 %It takes 2 input arguments, width and area
 function [ leng, peri ] = calc_fence(width,area)
