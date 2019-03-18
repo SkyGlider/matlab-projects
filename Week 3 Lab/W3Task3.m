@@ -29,8 +29,8 @@ hold off;
 tota = gold + silv + bron;
 
 %finds the value of the largest no. of medals and its position
-[max_medals max_pos] = max(tota);
+[max_medals, max_pos] = max(tota);
 
 %Output max no. of medals and its corresponding country code
-max_medals
+disp(max_medals)
 max_country = cc(max_pos)
