@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 22 MAR 2019
 % Task 4 : Uniform Beam
-
+clear all; close all; clc;
 %chosen units : cm for length, kN for force
 %variables
 L = 100;

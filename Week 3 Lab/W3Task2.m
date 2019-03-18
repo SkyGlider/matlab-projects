@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 22 MAR 2019
 % Task 2 : Graph functions
+clear all; close all; clc;
 
 %Create a row vector z from -10 to 10 with increment 0.1
 z = -10:0.1:10;

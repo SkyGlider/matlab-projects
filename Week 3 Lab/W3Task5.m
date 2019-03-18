@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 22 MAR 2019
 % Task 5 : Water Tank
-
+clear all; close all; clc;
 %creates row vector for radius with 0.025m increment
 r = 2:0.025:10;
 

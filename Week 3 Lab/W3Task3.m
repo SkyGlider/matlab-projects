@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 22 MAR 2019
 % Task 3 : Winter Olympics
-
+clear all; close all; clc;
 %create row vector for values of country codes and their respective medals
 cc = [ 1 47 0 46 49 31 ];
 gold = [ 11 14 9 7 14 8 ];
