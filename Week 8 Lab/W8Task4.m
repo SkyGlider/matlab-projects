@@ -26,3 +26,5 @@ legend('g(c)',"g'(c)",'Solution');
 xlabel('c value');
 ylabel("g(c)/g'(c)");
 hold off;
+
+fprintf('The value of c when the growth is maximum is %4.2f and took %4.0f iterations',root,iter)

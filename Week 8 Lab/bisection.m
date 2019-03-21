@@ -7,12 +7,12 @@ function  [ root, iter ] = bisection(f,xl,xu,precision)
     %finds the value of fx(l)
     fxl = f(xl);
     %iteration counter = 1 as first xr has been calculated
-    y = 1;
+    y = 0;
     %gets the first xr value(midpoint)
-    xr = 0.5*(xl+xu);
+    xr = NaN;
     
     %while loop to check if xr is close enough to precision
-    while abs(f(xr)) > precision
+    while or((abs(f(xr)) > precision), isnan(xr))
         
         %adds the iteration counter
         y = y + 1;
