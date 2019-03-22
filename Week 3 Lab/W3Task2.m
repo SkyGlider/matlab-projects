@@ -7,25 +7,19 @@ clear all; close all; clc;
 z = -10:0.1:10;
 
 %Calculates value of f(z) for each value of z
-fz = (1/sqrt(2*pi))*exp((z*-1)./2);
+fz = (1/sqrt(2*pi))*exp((-1*(z.^2))/2);
 
 %Calculates value of g(z) for each value of z
-gz = (z/6).*(sin(z));
+gz = (z./6).*(sin(z));
 
-%plots f(z) agaisnt z
-plot(z,fz,'b--');
-
-%hold onto the current plot to plot a second graph
-hold on;
-
-%plots g(z) against z
-plot(z,gz,'r-');
+%plots f(z) and g(z) agaisnt z
+plot(z,fz,'b--',z,gz,'r-');
 
 %set labels for x and y axes and turn on legend
 xlabel('z value');
 ylabel('f(z)/g(z)');
 legend('f(z)','g(z)');
+grid on;
 
-hold off;
 
 

@@ -3,34 +3,29 @@
 % Task 3 : Winter Olympics
 clear all; close all; clc;
 %create row vector for values of country codes and their respective medals
-cc = [ 1 47 0 46 49 31 ];
-gold = [ 11 14 9 7 14 8 ];
-silv = [ 8 14 8 6 10 6 ];
-bron = [ 10 11 6 1 7 6];
+result = [ 1 11 8 10 ; 47 14 14 11 ; 0 9 8 6; 46 7 6 1; 49 14 10 7 ; 31 8 6 6];
 
-%plots no of gold medals against country code 
-plot(cc,gold,'bd');
-
-%hold onto the current graph to plot other values
-hold on;
-
-%plots no of silver and bronze medals against country code 
-plot(cc,silv,'rs');
-plot(cc,bron,'bo');
+%plots no of gold , silver and bronze medals against country code 
+cc = result(:,1);
+gold = result(:,2);
+silv = result(:,3);
+bron = result(:,4);
+plot(cc,gold,'kd',cc,silv,'rs',cc,bron,'bo');
 
 %labels the axes and adds a legend
 xlabel('country code');
 ylabel('medals');
-legend('gold','silver','bronze','Northwest');
+legend('gold','silver','bronze','Location','northwest');
 
-hold off;
 
 %sums all the matrices containing no of medals into one matrix
 tota = gold + silv + bron;
 
+%append total to the 5th column
+result = [ result tota ]
+
 %finds the value of the largest no. of medals and its position
-[max_medals, max_pos] = max(tota);
+[max_medals, max_pos] = max(tota)
 
 %Output max no. of medals and its corresponding country code
-disp(max_medals)
 max_country = cc(max_pos)
