@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 29 MAR 2019
 % Task 4 : Daily Temperature
+close all; clear all; clc;
 
 %forms a row vector of days from 1 to 365
 days = 1:1:365;

@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 29 MAR 2019
 % Task 2 : Butterfly curve
+close all; clear all; clc;
 
 %prompts the user for min and max value of t
 mint = input('Enter minimum value of t : ');

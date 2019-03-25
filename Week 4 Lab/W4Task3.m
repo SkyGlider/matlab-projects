@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 29 MAR 2019
 % Task 3 : Functions
+close all; clear all; clc;
 
 %set up row matrix of mass1, mass2 and distance
 mass_earth = linspace(5.9e23,5.9e23,5);

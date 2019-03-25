@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 29 MAR 2019
 % Task 5 : Fence
+close all; clear all; clc;
 
 %create row vector W1 for width between 7 to 20 meters
 W1 = linspace(7,20);
