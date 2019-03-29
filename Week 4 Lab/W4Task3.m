@@ -4,7 +4,7 @@
 close all; clear all; clc;
 
 %set up row matrix of mass1, mass2 and distance
-mass_earth = linspace(5.9e23,5.9e23,5);
+mass_earth = linspace(5.9e24,5.9e24,5);
 mass_obj = [ 6.4e23 1.9e27 5.7e26 8.7e25 1e26 ];
 dist = [ 7.8e10 6.3e11 1.3e12 2.7e12 4.4e12];
 

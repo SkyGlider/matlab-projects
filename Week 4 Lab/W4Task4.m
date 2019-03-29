@@ -22,7 +22,7 @@ plot(auminday,aumint,'r*');
 %labels the axes, adds a legend and title
 xlabel('days');
 ylabel('average daily temperature');
-legend('Melbourne','New York');
+legend('Melbourne','New York','New York minimum','Melbourne minimum');
 title('Average daily temperatures of different cities');
 
 %prints the values

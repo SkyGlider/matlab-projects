@@ -19,7 +19,7 @@ hold on;
 
 
 %finds the minimum perimeter and its position in the row matrix
-[ minpvalue, minpos ] = min(P1);
+[ minpvalue, minpos ] = min(P1)
 %finds the width corresponding to the minimum permeter
 wvalue = W1(minpos);
 
@@ -29,6 +29,7 @@ plot(wvalue,minpvalue,'bd');
 %labels the axes
 xlabel('width(m)');
 ylabel('perimeter(m)');
+legend('Perimeter','minimum');
 
 hold off;
 
