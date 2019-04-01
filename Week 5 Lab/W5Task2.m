@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 5 APR 2019
 % Task 2 : Import data
+close all; clear all; clc;
 
 %opens the file lab4_plot_data.txt
 datum = fopen('lab4_plot_data.txt');

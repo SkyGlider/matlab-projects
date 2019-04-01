@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 5 APR 2019
 % Task 4 : BMI Calculator
-
+close all; clear all; clc;
 %prompts the user for their weight and height
 usr_w = input('Enter your weight in kg : ');
 usr_h = input('Enter your height in m : ');

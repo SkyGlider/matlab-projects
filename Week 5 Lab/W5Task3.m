@@ -1,6 +1,7 @@
 % Name: Andrew Pang
 % Date: 5 APR 2019
 % Task 3 : Noisy data
+close all; clear all; clc;
 
 %opens the file temperatures.txt
 datum = fopen('temperatures.txt');
