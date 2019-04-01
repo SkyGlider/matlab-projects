@@ -2,6 +2,7 @@
 % Date: 5 APR 2019
 % Task 5 : Final Marks
 close all; clear all; clc;
+
 %prompts the user for their student ID
 usr_id = input('Welcome to Monash, please enter your student ID :');
 
