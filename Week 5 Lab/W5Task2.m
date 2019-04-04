@@ -16,13 +16,7 @@ y1 = str2num(fgetl(datum));
 y2 = sin(x);
 
 %plots a graph of y values from file agaisnt x 
-plot(x,y1,'ro');
-
-%holds onto current graph for second plot
-hold on;
-
-%plots a graph of sin x agaisnt x
-plot(x,y2,'k-');
+plot(x,y1,'ro',x,y2,'k-');
 
 %adds a label and legend to current figure
 xlabel('x value');

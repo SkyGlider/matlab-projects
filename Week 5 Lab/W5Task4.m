@@ -10,9 +10,6 @@ usr_h = input('Enter your height in m : ');
 %calculates the user's bmi 
 usr_bmi = usr_w/usr_h^2;
 
-%defines usr_class as an empty string
-usr_class = '';
-
 %if else statement to check the category which user belongs to
 %sets the string usr_class to underweight,overweight or normal based on bmi
 if usr_bmi < 18.5 

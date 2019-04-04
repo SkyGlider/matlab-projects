@@ -4,7 +4,7 @@
 
 %defines the function getmarks with 4 input arguments
 %this function returns two values
-function [ final_m, grade ] = getmarks(lab_m , ass_m , oth_m , exm_m);
+function [ final_m, grade ] = getmarks(lab_m , ass_m , oth_m , exm_m)
 
 %calculates the final marks of student
 final_m = (0.25*(lab_m/100) + 0.1*(ass_m/10) + 0.15*(oth_m/15) + 0.5*(exm_m/100))*100;
