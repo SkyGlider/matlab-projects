@@ -14,6 +14,7 @@ days = 1:1:length(temp_vals);
 
 %plots the graph of daily temperature agiasnt no of days
 plot(days,temp_vals,'rd');
+title('graph of daily temperature against days');
 
 %labels the axes
 xlabel('days');
@@ -39,12 +40,13 @@ figure;
 
 %plots graph of valid temperatures agaisnt the day it occured.
 plot(days2,valid_val,'bo');
+title('plot of valid daily temperatures')
 
 %labels the axes
 xlabel('days');
 ylabel('temperature');
 
-
+fclose(datum);
 
         
         

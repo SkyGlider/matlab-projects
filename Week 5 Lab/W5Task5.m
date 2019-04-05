@@ -28,7 +28,7 @@ exm_total = marks_table(x,14);
 [ total_marks, grade ] = getmarks(lab_total,ass_total,oth_total,exm_total);
 
 %prints the final mark and grade
-fprintf('your total mark is %4.2f, your grade is ',total_marks);
+fprintf('your total mark is %2.0f, your grade is ',total_marks);
 fprintf(grade);
 
 

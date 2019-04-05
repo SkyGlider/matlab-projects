@@ -22,3 +22,5 @@ plot(x,y1,'ro',x,y2,'k-');
 xlabel('x value');
 ylabel('y/sin x');
 legend('y','sin x');
+
+fclose(datum);
