@@ -8,7 +8,7 @@ k = 0;
 eul = NaN;
 
 %while loop to check if the diference is less thatn 1e-6
-while or((abs( eul - exp(1)) > 1e-6),isnan(eul))
+while (abs( eul - exp(1)) > 1e-6) || isnan(eul)
     %increases the vaue of k by 1
     k = k + 1;
     eul = 0;
@@ -20,6 +20,7 @@ while or((abs( eul - exp(1)) > 1e-6),isnan(eul))
         %add term to cumulative counter eul
         eul = eul + term;
     end 
+    
 end
 
 k_value = k

@@ -1,8 +1,14 @@
 % Name: Andrew Pang
 % Date: 12 APR 2019
 % Function for Task 4 : Factorial calculator
-
-
+%
+%
+%---INPUTS:---
+% n = number
+%
+%---OUTPUTS:---
+% val = factorial of n
+%
 function [val] = get_fac(n)
 
 if isreal(n) == 1 

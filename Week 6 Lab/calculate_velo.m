@@ -1,8 +1,17 @@
 % Name: Andrew Pang
 % Date: 12 APR 2019
 % Function for Task 3 : Andrew's Rocket Ship
-
-%defines the function calculate_velo, takes 2 arguments, returns 2 values
+%
+%
+%---INPUTS:---
+% start_t = start time
+% end_t = end time
+%
+%---OUTPUTS:---
+% time = vector between start and end times
+% velo = veclocity for each time value
+%
+%
 function [ time , velo ] = calculate_velo(start_t,end_t)
 
 %returns time as a row vector
