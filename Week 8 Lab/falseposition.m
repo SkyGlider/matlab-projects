@@ -6,14 +6,14 @@ function [ root, iter ] = falseposition(f,xl,xu,precision)
     %finds the value of fx(l) and fx(u)
     fxl = f(xl);
     fxu = f(xu);
-    xr =  NaN ;
     
+    fxr = precision + 1;
     %iteration counter
     y = 0;
     
     %checks if the absolute value of f(xr) is more than the precision
     %if so, the code loops
-    while or((abs(f(xr)) >  precision),isnan(xr))
+    while abs(fxr) >  precision
         
         %adds to iteration counter
         y = y+1;
