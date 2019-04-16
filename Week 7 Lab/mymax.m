@@ -1,9 +1,13 @@
 % Name: Andrew Pang
 % Date: 19 APR 2019
 % Function for Task 2 : Max value 
-
-%defines the function mymax that takes 1 input argument and returns 2
-%values
+%
+%
+% ----------INPUT----------
+% x = row vector
+% ----------OUTPUT----------
+% max_val = maximum value in row vector x
+% index = index position of the aximum value
 function [max_val, index] = mymax(x)
 
     %temporarily sets  max_val as the first element in x
