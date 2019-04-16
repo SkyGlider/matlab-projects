@@ -6,7 +6,7 @@ clear all;close all;clc;
 n = input("Enter value for n : ");
 d  = numdigs(n);
 
-if rem(n,2) == 0  
+if rem(d,2) == 0  
     xi = 7 * 10^((d-2)/2);  
 else
     xi = 2 * 10^((d-1)/2); 

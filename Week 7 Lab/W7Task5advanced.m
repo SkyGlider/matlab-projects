@@ -3,17 +3,22 @@
 % Task 5 : Rounded Square Root
 clear all;close all;clc;
 
-usr_in = input('Enter n value :')
+%prompt user input
+usr_in = input('Enter n value(s) :');
+
+%initialize
 xi1_tot = [];
 j = [];
+
+%run through every number defined by user
 for n =  usr_in
     
     d  = numdigs(n);
 
-    if rem(n,2) == 0  
-    xi = 7 * 10^((d-2)/2);  
+    if rem(d,2) == 0  
+        xi = 7 * 10^((d-2)/2);  
     else
-    xi = 2 * 10^((d-1)/2); 
+        xi = 2 * 10^((d-1)/2); 
     end 
     
     i = 0;
