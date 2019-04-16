@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 19 APR 2019  
 % Task 3 :  Fourier series
-clear all;close all;clc;    
+clear all; close all; clc;    
 
 %create a row vector time from -1 to 1
 time = -1:0.0001:1;
