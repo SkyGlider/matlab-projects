@@ -2,12 +2,13 @@
 % Date: 19 APR 2019
 % Function for Task 2 : Max value 
 %
-%
-% ----------INPUT----------
+% ----------INPUTS----------
 % x = row vector
-% ----------OUTPUT----------
+%
+% ----------OUTPUTS----------
 % max_val = maximum value in row vector x
 % index = index position of the aximum value
+%
 function [max_val, index] = mymax(x)
 
     %temporarily sets  max_val as the first element in x

@@ -25,12 +25,13 @@ for x = dx
         cost = 0.5*cv.*sqrt((x-cx).^2 + (y-cy).^2);
         
         %checks if total cost is less than the minimum recorded cost
+        %if yes, overwrites the minimum cost and notes coordiates
         if sum(cost) < mini_cost
-            %if yes, overwrites the minumum cost and notes coordiates
             mini_cost = sum(cost);
             x_pos = x;
-            y_pos = y;
+            y_pos = y;  
         end
+        
     end
 end
 
