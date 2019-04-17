@@ -8,7 +8,7 @@ V = [4, 9, -3, 12, 0, -9, 15, 17, 25, -6, 4, 10, -2, 15];
 
 %gets and prints the length of V
 V_len = length(V);
-fprintf('The length of vector V is %4.2f\n', V_len);
+fprintf('The length of vector V is %0.0f\n', V_len);
 
 %creates empty vector n
 n = [];
@@ -34,6 +34,6 @@ end
 n_len = length(n);
 
 %prints the answers
-fprintf('Vector n =');
-fprintf(' %4.2f',n);
-fprintf('\nThe length of new vector n is %f', n_len);
+fprintf('Vector n = ');
+fprintf(' %0.0f',n);
+fprintf('\nThe length of new vector n is %0.0f ', n_len);

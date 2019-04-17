@@ -1,7 +1,7 @@
 % Name: Andrew Pang
 % Date: 19 APR 2019  
 % Task 5 : Rounded Square Root
-clear all;close all;clc;
+clear all; close all; clc;
 
 
 n = input("Enter value for n : ");
@@ -33,6 +33,6 @@ while 1
     
     
 end   
-
 RSR_val = xi
 ite_val = i
+
