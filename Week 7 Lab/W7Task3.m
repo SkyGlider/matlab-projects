@@ -55,7 +55,7 @@ plot(time,answer,'b-');
 %labels the axes, adds a legend and title
 xlabel('t value');
 ylabel('f(t)/F(t)');
-legend('f(t)','F(t)','northwest');
+legend('f(t)','F(t)','Location','northwest');
 title(["Graph of F(t) and f(t) against t for ", num2str(n), " terms used in Fourier's plot"]);
 
 

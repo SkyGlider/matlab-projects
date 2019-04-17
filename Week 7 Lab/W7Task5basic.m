@@ -14,7 +14,7 @@ else
 end 
 
 i = 0;
-xi1 = [];
+xi1 = 0;
 
 while 1
     
