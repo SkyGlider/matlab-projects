@@ -24,8 +24,8 @@ for y = 1:1:length(coord)
 end
 
 %finds the minimum value and its coordinates
-[ minival, pos ] = min(min(coord));
-[ ypos, xpos] = find(coord == minival)
+minival = min(min(coord));
+[ ypos, xpos] = find(coord == minival);
 
 %plots the given graph
 plot(cx,cy,'ko','MarkerFaceColor','black');
@@ -40,4 +40,4 @@ xlabel('x (km)');
 ylabel('y (km)');
 legend('Customers','Distribution Centre')
 
-fprintf('The minimum cost is %f',minival)
+fprintf('The minimum cost is $%f',minival)
