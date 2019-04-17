@@ -3,23 +3,21 @@
 % Task 4 : Factorial calculator
 close all;clear all;clc
 
+format long
 %initialy k is 0 and eul is undefined
 k = 0;
-eul = NaN;
-
+n = 0;
+eul = 0;
+eulnew = 0;
 %while loop to check if the diference is less thatn 1e-6
-while (abs( eul - exp(1)) > 1e-6) || isnan(eul)
+
+while  (abs( eul - eulnew) > 1e-6) | (eul - eulnew) == 0
     %increases the vaue of k by 1
+    eulnew = eul ;
+    eul = eulnew + 1/get_fac(n);
     k = k + 1;
-    eul = 0;
+    n = n+1;
     
-    %for loop to run through every value between 0 - k
-    for i = 0:1:k
-        %calculates 1/n!
-        term = 1/get_fac(i);
-        %add term to cumulative counter eul
-        eul = eul + term;
-    end 
     
 end
 
