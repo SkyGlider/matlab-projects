@@ -48,4 +48,4 @@ xlabel('x (km)');
 ylabel('y (km)');
 legend('Customers','Distribution Centre')
 
-fprintf('The minimum cost is %f',mini_cost)
+fprintf('The minimum cost is $ %0.2f',mini_cost)

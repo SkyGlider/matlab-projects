@@ -23,7 +23,8 @@ plot(x(my_pos),my_val,'bo');
 xlabel('x value');
 ylabel('f(x) value');
 legend('f(x)','Maximum pt.');
+title('Graph of f(x) agaisnt x');
 
 %prints the answer
-fprintf('The maximum value is %4.2f and occurs at index %4.2f',my_val,my_pos);
+fprintf('The maximum value is %0.2f and occurs at index %0.0f',my_val,my_pos);
 

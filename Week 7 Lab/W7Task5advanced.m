@@ -45,7 +45,12 @@ for n =  usr_in
     j = [j i];
 end   
 
-RSR = xi1_tot
-iterations = j
-RSR_avg = mean(xi1_tot)
-iter_avg = mean(iterations)
+RSR = xi1_tot;
+iterations = j;
+
+%average calculations
+RSR_avg = mean(xi1_tot);
+iter_avg = mean(iterations);
+
+fprintf('The mean RSR is %f \n', RSR_avg);
+fprintf('The mean no. of iterations is %f',iter_avg);

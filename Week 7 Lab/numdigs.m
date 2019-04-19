@@ -10,7 +10,8 @@
 %
 
 function [d] = numdigs(n)
-
+     
+     %change int t string
      d = length(num2str(n));
 
 end
