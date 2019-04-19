@@ -35,5 +35,5 @@ n_len = length(n);
 
 %prints the answers
 fprintf('Vector n = ');
-fprintf(' %0.0f',n);
-fprintf('\nThe length of new vector n is %0.0f ', n_len);
+disp(n)
+fprintf('The length of new vector n is %0.0f ', n_len);

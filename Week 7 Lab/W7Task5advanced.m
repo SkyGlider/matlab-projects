@@ -47,3 +47,5 @@ end
 
 RSR = xi1_tot
 iterations = j
+RSR_avg = mean(xi1_tot)
+iter_avg = mean(iterations)
