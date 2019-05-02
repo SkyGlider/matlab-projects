@@ -16,8 +16,8 @@ hold on
 xi = input("Enter a guess for the root : ");
 
 %ontains root using newraph function
-root = newraph(fx,df,xi,1e-4);
-fprintf('The root is %f',root);
+[root, iter] = newraph(fx,df,xi,1e-4);
+fprintf('The root is %f\n',root);
 
 %plots the root
 plot(root,fx(root),'b^');
@@ -27,5 +27,8 @@ xlabel('height');
 ylabel('f(h)');
 title('f(h) = h^3 - 9h^2 + (90/pi)');
 legend('f(h)','Root');
+
+fprintf('The depth of water needed to fill the tank to 30m^3 is %fm\n',root);
+fprintf("It took the Newton-Raphson method %0.0f iterations to solve\n",iter);
 
 
