@@ -4,9 +4,9 @@
 close all; clear all; clc;
 
 %row vector for height, and fucntions f(h) and df/dh
-h = 0:0.01:10;
-fx = @(h) pi*h.^3 - 9*pi*h.^2 + 90;
-df = @(h) 3*pi*h.^2 - 18*pi*h;
+h = 0:0.01:6;
+fx = @(h) -pi*h.^3 + 9*pi*h.^2 - 90;
+df = @(h) -3*pi*h.^2 + 18*pi*h;
 
 %plots h agaisnt f(h)
 plot(h,fx(h));
