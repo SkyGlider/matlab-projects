@@ -2,7 +2,7 @@
 % Date: 3 MAY 2019  
 % Task 5 : 4-bar linkage
 close all; clear all; clc;
-
+format long
 %variables
 a = 1;
 b = 2;
@@ -12,7 +12,7 @@ q2 = 30;
 
 %create the function and fint the root using fzero
 fq = @(q) cosd(q2-q) - (d/a)*cosd(q) + (d/c)*cosd(q2) - (a^2 - b^2 + c^2 + d^2)/(2*a*c);
-root = fzero(fq,150);
+root = fzero(fq,120)
 
 %calls the respective functions to get the roots and number of iterations
 [ rootb, iterb ] = bisection(fq,120,165,1e-4);

@@ -1,6 +1,16 @@
 % Name: Andrew Pang
 % Date: 3 MAY 2019  
 % Function for Week 8 :  Secant Method
+%
+% INPUTS:
+%  - f: function handle of the equation to be solved
+%  - xi: the initial guess
+%  - xi_1: the initial guess x_i_-_1
+%  - precision: stopping criteria determined by the user
+% OUTPUT:
+%  - root: the root of the equation
+%  - iter: total iteration taken
+%
 function [ root,iter ] = secant(f,xi,xi1,precision)
 
     %initialize

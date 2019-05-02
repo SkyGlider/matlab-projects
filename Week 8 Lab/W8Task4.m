@@ -19,7 +19,7 @@ plot(c,dgc(c),'r-');
 [root, iter] = falseposition(dgc,0,5,1e-4);
 
 %plots the line for the root solution
-xline(root);
+xline(root,'k--');
 
 %labels the axes and adds a legend
 legend('g(c)',"g'(c)",'Solution');
@@ -27,4 +27,4 @@ xlabel('c value');
 ylabel("g(c)/g'(c)");
 hold off;
 
-fprintf('The value of c when the growth is maximum is %4.2f and took %4.0f iterations',root,iter)
+fprintf('The value of c when the growth is maximum is %f and took %0.0f iterations',root,iter)

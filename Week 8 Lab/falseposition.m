@@ -1,7 +1,16 @@
 % Name: Andrew Pang
 % Date: 3 MAY 2019  
 % Function for Week 8 :  False Position Method
-
+%
+% INPUTS:
+%  - f: function handle of the equation to be solved
+%  - xl: lower limit of the initial guess/bracket
+%  - xu: upper limit of the initial guess/bracket
+%  - precision: stopping criteria determined by the user
+% OUTPUT:
+%  - root: the root of the equation
+%  - iter: iterations taken
+%
 function [ root, iter ] = falseposition(f,xl,xu,precision)
     %finds the value of fx(l) and fx(u)
     fxl = f(xl);

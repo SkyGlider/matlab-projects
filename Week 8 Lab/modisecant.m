@@ -1,7 +1,16 @@
 % Name: Andrew Pang
 % Date: 3 MAY 2019  
 % Function for Week 8 :  Modified Secant Method
-
+%
+% INPUTS:
+%  - f: function handle of the equation to be solved
+%  - xi: the initial guess
+%  - pert: a small perturbation
+%  - precision: stopping criteria determined by the user
+% OUTPUT:
+%  - root: the root of the equation
+%  - iter: total iteration taken
+%
 function [root, iter] = modisecant(f,xi,pert,precision)
 
     %finds f(xi) and f'(xi)
