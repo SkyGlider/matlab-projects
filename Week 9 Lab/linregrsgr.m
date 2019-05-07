@@ -2,6 +2,19 @@
 % Date: 3 MAY 2019  
 % Function for Week 9 :  Linear Regression SGR
 
+%
+% INPUTS
+% x = x-values
+% y = y-values
+% n = order of model
+%
+% OUTPUT
+% F = nonlinear coefficient
+% V = nonlinear coefficient
+% yint = y - intercept of linear graph
+% grad = gradient of the linear graph
+% r2 = r^2 error value
+
 function [ F, V, yint, grad, r2 ] =linregrsgr(x,y,n)
     %number of elements
     num = length(x);
