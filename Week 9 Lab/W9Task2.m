@@ -14,6 +14,7 @@ hold on
 
 %calls the linreg function to obtain loge(b)=y-int, k=gradient and r2=error
 [lnb, k, r2 ] = linreg(x,lny);
+
 %finds b
 b = exp(lnb);
 fprintf('beta is %f, k is %f, r^2 is %f\n',b,k,r2);
@@ -32,7 +33,7 @@ fprintf('beta is %f , k is %f, r^2 is %f using polyfit\n',b_new,k_new,r2_new);
 
 %plots the graph for the non linear function
 x_new = 0:1:90;
-y_new = b*(exp(k*x_new));
+y_new = b_new.*(exp(k_new.*x_new));
 plot(x_new,y_new,'b--');
 
 %labels the graph

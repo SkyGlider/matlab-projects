@@ -27,6 +27,6 @@ plot(m,fx,'b--');
 %labels the axes , adds title and legend
 xlabel('mass');
 ylabel('acceleration');
-legend('Original','Extrapolated','NorthWest');
+legend('Original','Extrapolated','Location','northwest');
 
 

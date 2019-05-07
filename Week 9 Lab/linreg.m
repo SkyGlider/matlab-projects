@@ -1,6 +1,15 @@
 % Name: Andrew Pang
 % Date: 3 MAY 2019  
 % Function for Week 9 :  Linear Regression
+%
+% INPUTS
+% x = x-values
+% y = y-values
+%
+% OUTPUT
+% yint = y - intercept of linear graph
+% grad = gradient of the linear graph
+% err = r^2 error value
 
 function [ yint, grad, err ] = linreg(x,y)
 
