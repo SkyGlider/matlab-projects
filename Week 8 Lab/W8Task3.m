@@ -5,7 +5,7 @@ close all; clear all; clc;
 
 %row vector for height, and fucntions f(h) and df/dh
 h = 0:0.01:6;
-fx = @(h) -pi*h.^3 + 9*pi*h.^2 - 90;
+fx = @(h) -pi*h.^3 + 9*pi*h.^2 - 3*30;
 df = @(h) -3*pi*h.^2 + 18*pi*h;
 
 %plots h agaisnt f(h)
@@ -25,10 +25,10 @@ plot(root,fx(root),'b^');
 %labels the axes and adds a title and legend
 xlabel('height');
 ylabel('f(h)');
-title('f(h) = h^3 - 9h^2 + (90/pi)');
+title('f(h) = h^3 - 9h^2 + (150/pi)');
 legend('f(h)','Root');
 
-fprintf('The depth of water needed to fill the tank to 30m^3 is %fm\n',root);
+fprintf('The depth of water needed to fill the tank to 50m^3 is %fm\n',root);
 fprintf("It took the Newton-Raphson method %0.0f iterations to solve\n",iter);
 
 
