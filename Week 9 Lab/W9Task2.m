@@ -39,6 +39,7 @@ plot(x_new,y_new,'b--');
 %labels the graph
 xlabel('x values');
 ylabel('y values');
+title('Graph of y against x');
 legend('Original','Curve fit');
 
 

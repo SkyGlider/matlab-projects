@@ -25,7 +25,7 @@ new_S = a * new_T.^b;
 plot(new_T,new_S,'k-');
 
 %find value of S at 50C
-S_50 = a * 50^b;
+S_50 = a * 50^b
 plot(50,S_50,'rd');
 
 %labels the axes and adds a title & legend
