@@ -51,22 +51,9 @@ while error2 > precision
     
 end
 
-n_points_s = n;
-n_segments_s = n - 1
+n_points_sim = n;
+n_segments_sim = n - 1
 
-
-n = 1;
-error3 = precision + 1;
-while error3 > precision
-    
-    %since comp_simp must take odd values, n+=2
-    n = n + 2;
-    F_4 = comp_simp13TBE(fz,0,H,n);
-    error3 = abs(((F_4 - F_1)/F_1)*100);
-    
-end
-
-n_TBE = n -1
 
 
 
