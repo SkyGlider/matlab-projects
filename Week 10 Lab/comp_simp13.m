@@ -1,6 +1,16 @@
 % Name: Andrew Pang
 % Date: 3 MAY 2019  
 % Function for Week 10 : Composite Simpson 1/3
+%
+%-------INPUTS-------
+% f  - function
+% a  - starting x value
+% b  - end x value
+% n  - number of segments
+%
+%-------OUTPUTS-------
+% I  - integral value, total area of segments
+%
 function I = comp_simp13(f,a,b,n)
     %calculates the interval
     inter = (b-a)/(n-1);

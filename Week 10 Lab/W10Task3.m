@@ -12,21 +12,20 @@ b = 40;
 
 %calculate t and find vector mt 
 t = 0:40;
-mt = m0 * ( 1 - (r*t)/b);
+mt = @(t) m0 * ( 1 - (r*t)/b);
 %create function accel
-accel = @(mt) (T - mt*g)./(mt);
+accel = @(t) (T - mt(t)*g)./(mt(t));
 
 %plots the graph of accel agaisnt time
-plot(t,accel(mt),'b-');
-
-%finds the minimum and maximum values of m(t)
-a = mt(1);
-b = mt(41);
+plot(t,accel(t),'b-');
+xlabel('Time');
+ylabel('Acceleration');
+title('Graph of acceleration against time');
 
 %calls the comp_trap, comp_simp13 and MATLAB's own integration function
-vt_trap = comp_trap(accel,a,b,99)
-vt_simp = comp_simp13(accel,a,b,99)
-vt_matl = integral(accel,a,b)
+vt_trap = comp_trap(accel,t(1),t(end),99)
+vt_simp = comp_simp13(accel,t(1),t(end),99)
+vt_matl = integral(accel,t(1),t(end))
 
 
 
